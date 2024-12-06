@@ -27,12 +27,7 @@
 
 <body class="body login backend">
 <div class="container-custom">
-<header id="header" class="navbar navbar-static-top navbar-fixed-top header_unlogged">
-<div class="navbar-header text-center">
-<span class="navbar-brand">
-					Repositorio				</span>
-</div>
-</header>
+@include('layouts.navigation')
 
 		<div class="main_content_unlogged">
 <div class="container-fluid">

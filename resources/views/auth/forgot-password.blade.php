@@ -10,12 +10,12 @@
 <link rel="icon" type="image/png" href="http://localhost/RepoTriara/img/favicon/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="http://localhost/RepoTriara/img/favicon/favicon-152.png" sizes="152x152">
 <script src="http://localhost/RepoTriara/includes/js/jquery.1.12.4.min.js"></script>
- 
+
 	<!--[if lt IE 9]>
 <script src="http://localhost/RepoTriara/includes/js/html5shiv.min.js"></script>
 <script src="http://localhost/RepoTriara/includes/js/respond.min.js"></script>
 <![endif]-->
- 
+
 				<link rel="stylesheet" media="all" type="text/css" href="http://localhost/RepoTriara/assets/font-awesome/css/font-awesome.min.css" />
 <link rel="stylesheet" media="all" type="text/css" href="http://localhost/RepoTriara/css/social-login.css" />
 <link rel="stylesheet" media="all" type="text/css" href="http://localhost/RepoTriara/includes/js/chosen/chosen.min.css" />
@@ -24,21 +24,16 @@
 <link rel="stylesheet" media="all" type="text/css" href="http://localhost/RepoTriara/css/main.min.css" />
 <link rel="stylesheet" media="all" type="text/css" href="http://localhost/RepoTriara/css/mobile.min.css" />
 </head>
- 
+
 <body class="reset-password backend">
 <div class="container-custom">
-<header id="header" class="navbar navbar-static-top navbar-fixed-top header_unlogged">
-<div class="navbar-header text-center">
-<span class="navbar-brand">
-					Repositorio				</span>
-</div>
-</header>
- 
+    @include('layouts.navigation')
+
 		<div class="main_content_unlogged">
 <div class="container-fluid">
 <div class="row">
 <div class="col-xs-12 col-sm-12 col-lg-4 col-lg-offset-4">
- 
+
 	<div class="row">
 <div class="col-xs-12 branding_unlogged">
 <img src="http://localhost/RepoTriara/img/custom/logo/logo-claro.png" alt="Repositorio" />
@@ -60,14 +55,14 @@
 <form action="forgot-password" name="resetpassword" method="post" role="form">
 <fieldset>
 <input type="hidden" name="form_type" id="form_type" value="new_request" />
- 
+
 								<div class="form-group">
 <label for="reset_password_email">E-Mail</label>
 <input type="text" name="reset_password_email" id="reset_password_email" class="form-control" />
 </div>
- 
+
 								<p>Por favor ingrese su cuenta de E-mail. Usted recibira un link para continuar el proceso</p>
- 
+
 								<div class="inside_form_buttons">
 <button type="submit" name="submit" class="btn btn-wide btn-primary">Solicite una nueva contraseña</button>
 </div>
@@ -79,10 +74,10 @@
 </div>
 </div> <!-- container-custom -->
 </div>
- 
+
 					</div> <!-- row -->
 </div> <!-- container-fluid -->
- 
+
 					<footer>
 <div id="footer">
 			Claro Colombia 2024		</div>
@@ -97,6 +92,6 @@
 <script src="http://localhost/RepoTriara/includes/js/chosen/chosen.jquery.min.js"></script>
 </div> <!-- main_content -->
 </div> <!-- container-custom -->
- 
+
 	</body>
 </html>

@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	
+
+
 	<title>Registre una nueva cuenta &raquo; Repositorio</title>
 	<link rel="shortcut icon" type="image/x-icon" href="http://localhost/RepoTriara/favicon.ico" />
 <link rel="icon" type="image/png" href="http://localhost/RepoTriara/img/favicon/favicon-32.png" sizes="32x32">
@@ -28,12 +28,7 @@
 
 <body class="register backend">
 	<div class="container-custom">
-		<header id="header" class="navbar navbar-static-top navbar-fixed-top header_unlogged">
-			<div class="navbar-header text-center">
-				<span class="navbar-brand">
-					Repositorio				</span>
-			</div>
-		</header>
+		@include('layouts.navigation')
 
 		<div class="main_content_unlogged">
 			<div class="container-fluid">
@@ -48,7 +43,7 @@
 	<div class="white-box">
 		<div class="white-box-interior">
 
-			
+
 <script type="text/javascript">
 	$(document).ready(function() {
 		$("form").submit(function() {
@@ -61,15 +56,15 @@
 				is_email(this.add_client_form_email,'Correo electrónico no válido');
 				is_alpha_or_dot(this.add_client_form_user,'El usuario debe ser alfanumérico y puede contener (a-z,A-Z,0-9,.).');
 				is_number(this.add_client_form_maxfilesize,'El tamaño deñ archivo debe ser un valor entero');
-			
-			
+
+
 						is_complete(this.add_client_form_pass,'Complete la contraseña');
 						//is_complete(this.add_client_form_pass2,'la verificación de la contraseña n fue completa');
 						is_length(this.add_client_form_pass,5,60,'Contraseña Longitug debe estar entre 5 y 60 longitud de caracteres');
 						is_password(this.add_client_form_pass,'Su clave puede unicamente contener letras, numeros y los siguientes caracteres: ` ! \" ? $ ? % ^ & * ( ) _ - + = { [ } ] : ; @ ~ # | < , > . ? \' / \\ ');
 						//is_match(this.add_client_form_pass,this.add_client_form_pass2,'La contraseña no coincide ');
 
-			
+
 			// show the errors or continue if everything is ok
 			if (show_form_errors() == false) { return false; }
 		});
@@ -102,7 +97,7 @@
 				</div>
 			</div>
 			<button type="button" name="generate_password" id="generate_password" class="btn btn-default btn-sm btn_generate_password" data-ref="add_client_form_pass" data-min="20" data-max="20">Generar</button>
-					</div>		
+					</div>
 	</div>
 
 	<div class="form-group">
@@ -126,7 +121,7 @@
 		</div>
 	</div>
 
-	
+
 					<div class="form-group assigns">
 					<label for="add_client_group_request" class="col-sm-4 control-label">Solicitar acceso a grupos</label>
 					<div class="col-sm-8">
@@ -794,8 +789,8 @@
 													</select>
 											</div>
 				</div>
-	
-	
+
+
 	<div class="form-group">
 		<div class="col-sm-8 col-sm-offset-4">
 			<label for="add_client_form_notify_upload">
@@ -803,8 +798,8 @@
 		</div>
 	</div>
 
-		
-	
+
+
 	<div class="inside_form_buttons">
 		<button type="submit" name="submit" class="btn btn-wide btn-primary">Registrar Cuenta</button>
 	</div>
